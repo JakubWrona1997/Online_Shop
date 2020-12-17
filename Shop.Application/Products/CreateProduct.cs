@@ -16,17 +16,24 @@ namespace Shop.Application.Products
             _context = context;
         }
 
-        public async Task Do(string name, string description, decimal price)
+        public async Task Do(ProductViewModel vM)
         {
             _context.Products.Add(new Product
             {
-                Name=name,
-                Description=description,
-                Price=price
+                Name=vM.Name,
+                Description=vM.Description,
+                Price=vM.Price
             }
             );
 
             await _context.SaveChangesAsync();
         }
+       
+    }
+    public class ProductViewModel
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
     }
 }
