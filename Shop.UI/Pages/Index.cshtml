@@ -6,9 +6,7 @@
 
 <div class="text-center">
     <h1 class="display-4">Dodawanie produktów</h1>
-    <p>
         <form method="post">
-            
             <label>Name</label>
             <input asp-for="Product.Name" />
             <label>Description</label>
@@ -17,6 +15,15 @@
             <input asp-for="Product.Price" />
             <input type="submit" value="Save Product" />
         </form>
-    </p>
 
+</div>
+<div>
+    @{ 
+        foreach(var p in Model.Products)
+        {
+            <p>
+                @p.Name - @p.Description - @p.Price 
+            </p>
+        }
+    }
 </div>
