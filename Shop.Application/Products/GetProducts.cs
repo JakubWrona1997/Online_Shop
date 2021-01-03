@@ -18,7 +18,7 @@ namespace Shop.Application.GetProducts
             {
                 Name = x.Name,
                 Description = x.Description,
-                Price=$"PLN {x.Price.ToString("N2")}", //1100.50 => 1,100.50
+                Price=$"PLN {x.Price.ToString("N2")}", // 1100.50 => 1,100.50
             });
     }
     public class ProductViewModel
