@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Shop.Domain.Models
 {
-    class Stock
+    public class Stock
     {
         public int Id { get; set; }
         public string Description { get; set; }
