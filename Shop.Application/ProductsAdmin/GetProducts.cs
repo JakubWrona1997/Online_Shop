@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Shop.Application.Products
+namespace Shop.Application.ProductsAdmin
 {
     public class GetProducts
     {
@@ -16,15 +16,17 @@ namespace Shop.Application.Products
         }
         public IEnumerable<ProductViewModel> Do() => _ctx.Products.ToList().Select(x => new ProductViewModel
             {
+                Id = x.Id,
                 Name = x.Name,
                 Description = x.Description,
-                Price=$"PLN {x.Price.ToString("N2")}", // 1100.50 => 1,100.50
+                Price=x.Price
             });
         public class ProductViewModel
         {
+            public int Id { get; set; }
             public string Name { get; set; }
             public string Description { get; set; }
-            public string Price { get; set; }
+            public decimal Price { get; set; }
         }
     }
    
