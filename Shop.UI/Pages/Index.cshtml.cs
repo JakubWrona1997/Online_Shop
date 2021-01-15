@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using System.Collections.Generic;
 using Shop.Application.Products;
+using Shop.Application.ProductsAdmin;
 
 namespace Shop.UI.Pages
 {
@@ -17,11 +18,19 @@ namespace Shop.UI.Pages
         {
             _ctx = context;
         }
+        [BindProperty]
+        public CreateProduct.ProductViewModel Product { get; set; }
    
-        public IEnumerable<GetProducts.ProductViewModel> Products { get; set; }
+        public IEnumerable<Application.ProductsAdmin.GetProducts.ProductViewModel> Products { get; set; }
         public void OnGet()
         {
-            Products = new GetProducts(_ctx).Do();
+            Products = new Application.ProductsAdmin.GetProducts(_ctx).Do();
+        }
+        public async Task<IActionResult> OnPost()
+        {
+            await new CreateProduct(_ctx).Do(Product);
+
+            return RedirectToPage("Index");
         }
        
     }
