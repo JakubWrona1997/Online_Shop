@@ -4,26 +4,89 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Dodawanie produktów</h1>
-        <form method="post">
-            <label>Name</label>
-            <input asp-for="Product.Name" />
-            <label>Description</label>
-            <input asp-for="Product.Description" />
-            <label>Price</label>
-            <input asp-for="Product.Price" />
-            <input type="submit" value="Save Product" />
-        </form>
-
+<div class="row">
+    <div class="col-lg-12 series">
+        <img src="~/images/widenajman.jpg" style="width: 100%">
+        <div class="mainbtn" style="font: 15px/1.2 'Oswald', sans-serif; border: 1px solid white;">
+            <span class="mainbtn-inner">NOWA KOLEKCJA</span>
+        </div>
+    </div>
 </div>
-<div>
-    @{ 
-        foreach(var p in Model.Products)
-        {
-            <p>
-                @p.Name - @p.Description - @p.Price 
-            </p>
-        }
-    }
+
+<div class="row">
+    <div class="col-lg-3 col-sm-6 series overs">
+        <img src="~/images/najman.jpg" style="width: 100%">
+        <div class="mainbtn">
+            <span class="mainbtn-inner">DLA NIEGO</span>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 series overs">
+        <img src="~/images/najman.jpg" style="width: 100%">
+        <div class="mainbtn">
+            <span class="mainbtn-inner">DLA NIEJ</span>
+        </div>
+    </div>
+    <div class="col-lg-6 newsletter">
+        <h6>NOWOŚCI | TRENDY | PROMOCJE</h6><br />
+        <h3>
+            <b>Zapisz się do newslettera</b>
+            <div class="collapse navbar-collapse">
+                już teraz!<br>
+                i zgarnij -15% na zakupy online
+            </div>
+        </h3><br><br />
+        <!--FORMULARZ-->
+        <form>
+            <div class="form-group">
+                <input type="email" class="form-control" id="inputEmail1" placeholder="Wpisz adres e-mail">
+            </div><br />
+            <div id="checkbox1">
+                <label>
+                    <input type="checkbox" checked="checked"> AKCEPTUJĘ WARUNKI NEWSLETTERA
+                </label>
+            </div>
+            <div id="button1">
+                <button type="submit" class="signin">ZAPISZ SIĘ</button>
+            </div>
+        </form>
+    </div>
+</div><br />
+
+<div class="row">
+    <div class="col-lg-2 col-sm-4 series overs">
+        <img src="~/images/pnajman.jpg" style="width: 100%">
+        <div class="mainbtn">
+            <span class="mainbtn-inner">SPRAWDŹ</span>
+        </div>
+    </div>
+    <div class="col-lg-2 col-sm-4 series overs">
+        <img src="~/images/pnajman.jpg" style="width: 100%">
+        <div class="mainbtn">
+            <span class="mainbtn-inner">SPRAWDŹ</span>
+        </div>
+    </div>
+    <div class="col-lg-2 col-sm-4 series overs">
+        <img src="~/images/pnajman.jpg" style="width: 100%">
+        <div class="mainbtn">
+            <span class="mainbtn-inner">SPRAWDŹ</span>
+        </div>
+    </div>
+    <div class="col-lg-2 col-sm-4 series overs">
+        <img src="~/images/pnajman.jpg" style="width: 100%">
+        <div class="mainbtn">
+            <span class="mainbtn-inner">SPRAWDŹ</span>
+        </div>
+    </div>
+    <div class="col-lg-2 col-sm-4 series overs">
+        <img src="~/images/pnajman.jpg" style="width: 100%">
+        <div class="mainbtn">
+            <span class="mainbtn-inner">SPRAWDŹ</span>
+        </div>
+    </div>
+    <div class="col-lg-2 col-sm-4 series overs">
+        <img src="~/images/pnajman.jpg" style="width: 100%">
+        <div class="mainbtn">
+            <span class="mainbtn-inner">SPRAWDŹ</span>
+        </div>
+    </div>
 </div>
