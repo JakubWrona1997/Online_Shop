@@ -19,7 +19,7 @@ namespace Shop.UI.Pages
             _ctx = context;
         }
         [BindProperty]
-        public CreateProduct.ProductViewModel Product { get; set; }
+        public CreateProduct.Request Product { get; set; }
    
         public IEnumerable<Application.ProductsAdmin.GetProducts.ProductViewModel> Products { get; set; }
         public void OnGet()
