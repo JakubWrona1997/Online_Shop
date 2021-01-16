@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - Shop.UI</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header style="position: fixed; z-index:999; width: 100%">
@@ -19,7 +21,66 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link buttons" asp-area="" asp-page="/Index"><i class="fa fa-home  buttons"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle  buttons" data-toggle="dropdown"><i class="fa fa-bars buttons"></i></a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="col-megamenu">
+                                            <h4 class="title">ONA</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-megamenu">
+                                            <h4 class="title">ON</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-megamenu">
+                                            <h4 class="title">AKCESORIA</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-megamenu">
+                                            <h4 class="title">NOWOŚCI</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
@@ -32,15 +93,50 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container bott">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - Shop.UI - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="footer" style="border-top: solid 3px red">
+        <div class="container" >
+            <div class="row foot">
+                <div class="col-lg-4 col-md-12">
+                    <h4><b>Shop.UI</b></h4>
+                    <h6>Pepega © 2020 Wszelkie prawa zastrzeżone</h6>
+                </div>
+                <div class="col-lg-3 offset-lg-2 col-md-6 col-6">
+                    <h5><b>Polityka prywatności</b></h5>
+                    <h6><a href="#">Polityka prywatności</a></h6>
+                    <h6><a href="#">Polityka cookies</a></h6>
+                    <h6><a href="#">Ustawienia powiadomień</a></h6>
+                    <h6><a href="#">Zaufani partnerzy</a></h6>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5><b>Pomoc</b></h5>
+                    <h6><a href="#">Regulamin</a></h6>
+                    <h6><a href="#">FAQ - często zadawane pytania</a></h6>
+                    <h6><a href="#">Tabela rozmiarów</a></h6>
+                    <h6><a href="#">Karty podarunkowe</a></h6>
+                    <h6><a href="#">Reklamacje</a></h6>
+                </div>
+            </div>
+            <div class="row foot">
+                <div class="col-lg-4  col-md-12">
+                    <h5><b>Śledź nas</b></h5>
+                    <button class="buttons"><i class="fa fa-facebook"></i></button>
+                    <button class="buttons"><i class="fa fa-twitter"></i></button>
+                    <button class="buttons"><i class="fa fa-youtube"></i></button>
+                    <button class="buttons"><i class="fa fa-instagram"></i></button>
+                </div>
+                <div class="col-lg-3 offset-lg-5 col-md-12">
+                    <h5><b>Skontaktuj się z nami</b></h5>
+                    <div class="cent">
+                        <button type="submit" class="signin" style="padding: 0px 24px">FORMULARZ KONTAKTOWY</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
