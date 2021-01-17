@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "AccountLayout";
+    ViewData["Title"] = "AdminPanelLayout";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 <!DOCTYPE html>
@@ -15,43 +15,46 @@
 <body>
     <div class="row px-2">
         <div class="col-lg-3 accountmenu">
-            <h3>Centrum klienta</h3>
+            <h3>Panel administratora</h3>
 
             <h4><b>$Imię $Nazwisko</b></h4>
-            <h4>$email</h4>
             <br>
             <div class="row">
                 <div class="col-md-12 col-sm-6 col-6 paddbutt1">
                     <div id="button2">
-                        <button class="accbutton"><a asp-area="" asp-page="/MyOrders">MOJE ZAMÓWIENIA</a></button>
+                        <button class="accbutton"><a asp-area="" asp-page="/AddProduct">PRODUKTY</a></button>
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-6 col-6 paddbutt2">
                     <div id="button2">
-                        <button class="accbutton"><a asp-area="" asp-page="/MyData">MOJE DANE</a></button>
+                        <button class="accbutton"><a asp-area="">EMPTY</a></button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-6 col-6 paddbutt3">
                     <div id="button2">
-                        <button class="accbutton"><a asp-area="" asp-page="/Service">OBSŁUGA KLIENTA</a></button>
+                        <button class="accbutton"><a asp-area="">EMPTY</a></button>
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-6 col-6 paddbutt4">
                     <div id="button2">
-                        <button class="accbutton"><a asp-area="" asp-page="/Settings">USTAWIENIA KONTA</a></button>
+                        <button class="accbutton"><a asp-area="">EMPTY</a></button>
                     </div>
                 </div>
             </div>
-            <div id="button2">
-                <button class="accbutton">WYLOGUJ SIĘ</button>
-            </div>
         </div>
 
 
-        <div class="col-lg-8 accountpanel"  style="padding: 30px 30px">
+        <div class="col-lg-8 accountpanel" style="padding: 30px 30px">
             @RenderBody()
         </div>
     </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+
 </body>
