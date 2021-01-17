@@ -156,6 +156,15 @@ text-align: center;
     filter: brightness(100%);
 }
 
+.fixedspan {
+    color: white;
+    transition: all 0s;
+}
+
+    .fixedspan:hover {
+        color: #373737;
+    }
+
 
 .series:hover > .mainbtn {
     font: 12px/1.2 "Oswald", sans-serif;
@@ -480,5 +489,53 @@ text-align: center;
     #button2 {
         text-align: center;
         padding: 10px 0px;
+    }
+}
+
+/* PRODUCTEX */
+
+.prodexrow {
+    height: 900px;
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+}
+
+.addcart {
+    background-color: transparent;
+    border: solid black 2px;
+    padding: 12px 24px;
+    transition: all .5s;
+    color: black;
+    width: 70%;
+}
+
+    .addcart:hover {
+        background-color: black;
+        color: white;
+    }
+
+        .addcart:hover > a {
+            color: white;
+        }
+
+.prodinfo {
+    text-align: left;
+    position: fixed;
+    left: 50vw;
+}
+
+@media only screen and (max-width: 992px) {
+    .prodexrow {
+        height: 1300px;
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+    .prodinfo {
+        text-align: left;
+        position: static;
+        left: 0px;
     }
 }
