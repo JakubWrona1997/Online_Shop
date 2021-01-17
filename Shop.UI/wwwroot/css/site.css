@@ -344,3 +344,141 @@ text-align: center;
             padding-bottom: 1rem;
         }
 }
+
+/* ACCOUNT */
+
+.accountmenu {
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+    height: 500px;
+    text-align: left;
+    padding: 24px 24px;
+}
+
+@media only screen and (Max-width: 1200px) {
+    .accountmenu {
+        height: 650px;
+    }
+}
+
+@media only screen and (Max-width: 991px) {
+    .accountmenu {
+        height: 550px;
+    }
+}
+
+@media only screen and (Max-width: 767px)
+{
+    .accountmenu {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .accountmenu {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .accountmenu {
+        height: 400px;
+    }
+}
+
+.accountpanel {
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+    height: 500px;
+    margin-left: 30px;
+}
+
+@media only screen and (Max-width: 991px) {
+    .accountpanel {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (Max-width: 1200px) {
+    .accountpanel {
+        height: 650px;
+    }
+}
+
+.accbutton {
+    background-color: transparent;
+    border: solid black 2px;
+    padding: 12px 24px;
+    transition: all .5s;
+    color: black;
+    width: 100%;
+}
+
+    .accbutton:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .accbutton:hover > a {
+        color: white;
+    }
+
+#button2 {
+    text-align: left;
+    padding: 5px;
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .accbutton {
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 811px) {
+    .accbutton {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .accbutton {
+        font-size: 14px;
+        padding: 10px 9px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .accbutton {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .paddbutt1 {
+        padding-right: 5px;
+    }
+
+    .paddbutt2 {
+        padding-left: 5px;
+    }
+
+    .paddbutt3 {
+        padding-right: 5px;
+    }
+
+    .paddbutt4 {
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #button2 {
+        text-align: center;
+        padding: 10px 0px;
+    }
+}

@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "AccountLayout";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="row px-2">
+        <div class="col-lg-3 accountmenu">
+            <h3>Centrum klienta</h3>
+
+            <h4><b>$Imię $Nazwisko</b></h4>
+            <h4>$email</h4>
+            <br>
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-6 paddbutt1">
+                    <div id="button2">
+                        <button class="accbutton"><a asp-area="" asp-page="/MyOrders">MOJE ZAMÓWIENIA</a></button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-6 col-6 paddbutt2">
+                    <div id="button2">
+                        <button class="accbutton"><a asp-area="" asp-page="/MyData">MOJE DANE</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-6 paddbutt3">
+                    <div id="button2">
+                        <button class="accbutton"><a asp-area="" asp-page="/Service">OBSŁUGA KLIENTA</a></button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-6 col-6 paddbutt4">
+                    <div id="button2">
+                        <button class="accbutton"><a asp-area="" asp-page="/Settings">USTAWIENIA KONTA</a></button>
+                    </div>
+                </div>
+            </div>
+            <div id="button2">
+                <button class="accbutton">WYLOGUJ SIĘ</button>
+            </div>
+        </div>
+
+
+        <div class="col-lg-8 accountpanel">
+            @RenderBody()
+        </div>
+    </div>
+</body>
