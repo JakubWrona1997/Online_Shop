@@ -20,7 +20,7 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        <li class="nav-item px-3">
                             <a class="nav-link buttons" asp-area="" asp-page="/Index"><i class="fa fa-home  buttons"></i></a>
                         </li>
                         <li class="nav-item">
@@ -82,15 +82,22 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Admin/Index">Admin</a>
-                        </li>
                     </ul>
                 </div>
-            </div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link buttons" asp-area="" asp-page="/Login"><i class="fa fa-user  buttons"></i></a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link buttons" asp-area="" asp-page="/Index"><i class="fa fa-shopping-cart  buttons"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Admin/Index">Admin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </nav>
     </header>
     <div class="container bott">

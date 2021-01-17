@@ -7,7 +7,6 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-
 .btn-primary {
   background-color: #1b6ec2;
   border-color: #1861ac;
@@ -214,6 +213,71 @@ text-align: center;
     padding: 20px 50px;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.logarea {
+    height: 450px;
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    padding: 15px 50px;
+    box-shadow: 0 0 20px #888;
+    text-align: left;
+}
+
+.regarea {
+    height: 450px;
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    padding: 15px 50px;
+    box-shadow: 0 0 20px #888;
+    text-align: left;
+}
+
+.logpic {
+    height: 450px;
+    margin-top: 100px;
+    padding: 0px;
+    box-shadow: 0 0 20px #888;
+}
+
+@media only screen and (max-width: 992px) {
+    .logarea {
+        margin-top: 0px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .regarea {
+        margin-top: 0px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 577px) {
+    .regarea {
+        margin-top: 0px;
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .regarea {
+        margin-top: 0px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .logpic {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .logpic {
+        height: 250px;
+    }
 }
 
 #button1 {
