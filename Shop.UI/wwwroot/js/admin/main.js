@@ -7,17 +7,26 @@
             id: 0,
             name: "Nazwa produktu",
             description: "Opis",
-            price: 10.99
+            price: 0
         },
         products: []
+    },
+    mounted() {
+        this.getProducts();
     },
     methods: {
         getProduct(id) {
             this.loading = true;
-            axios.get('/Admin/product/' + id)
+            axios.get('/Admin/products/' + id)
                 .then(res => {
                     console.log(res);
-                    this.products = res.data;
+                    var product = res.data;
+                    this.productModel = {
+                        id: product.id,
+                        name: product.name,
+                        description: product.description,
+                        price: product.price
+                    }
                 })
                 .catch(err => {
                     console.log(err);
@@ -81,14 +90,9 @@
                     this.loading = false;
                 });
         },
-        editProduct(product, index) {
+        editProduct(id, index) {
             this.objectIndex = index;
-            this.productModel = {
-                id: product.id,
-                name: product.name,
-                description: product.description,
-                price: product.price,
-                }  
+            this.getProduct(id);
             }
         },
 
