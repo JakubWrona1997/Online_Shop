@@ -2,27 +2,29 @@
 @model Shop.UI.Pages.Admin.IndexModel
 @{
 }
+<div id="app" class="container">
+    <div class="row">
+        <nav class="col-3">
+            <h3>Admin menu</h3>
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link active">Produkty</a></li>
+                    <li class="nav-item"><a class="nav-link">Zamówienia</a></li>
+                    <li class="nav-item"><a class="nav-link">Magazyn</a></li>
+                </ul>
+            </div>
+        </nav>
 
-<div id="app">
-    <div>
-        <p v-for="(product, index) in products">
-            {{product.id}} - {{product.name}}
-            <a @@click="editProduct(product.id, index)">Edytuj</a>
-            <a @@click="deleteProduct(product.id, index)">Usuń produkt</a>
-        </p>
-    </div>
-    <div>
-        <input v-model="productModel.name" />
-        <input v-model="productModel.description" />
-        <input v-model.number="productModel.price" />
-        <button @@click="createProduct" v-if="!productModel.id">Stwórz produkt</button>
-        <button @@click="updateProduct" v-else>Zaktualizuj produkt</button>
+        <div class="col-9">
+            <product-manager></product-manager>
+        </div>
     </div>
 </div>
-
 @section scripts{
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="~/js/admin/product-manager.js"></script>
     <script src="~/js/admin/main.js"></script>
+
 } 
