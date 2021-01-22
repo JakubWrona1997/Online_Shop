@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Shop.UI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Admin Panel</h2>
+        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+        <div class="row">
+            <div class="col-3">
+                <div class="wrapper">
+                    <!-- Sidebar -->
+                    <nav id="sidebar">
+                        <div class="sidebar-header">
+                            <h3>Menu</h3>
+                        </div>
+                        <ul class="nav flex-column nav-pills">
+                            <li class="nav-item">
+                                <a asp-page="/Admin/Index" class="nav-link active" id="Products_menu-tab" data-toggle="pill" aria-controls="Products_menu" aria-selected="true">Produkty</a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-page="/Admin/Orders" class="nav-link" id="Products_orders-tab" data-toggle="pill" aria-controls="Products_orders" aria-selected="false">Zamówienia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-page="/Admin/Stock" class="nav-link" id="Products_stock-tab" data-toggle="pill" aria-controls="Products_stock" aria-selected="false">Magazyn</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="col-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

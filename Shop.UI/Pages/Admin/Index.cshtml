@@ -2,21 +2,19 @@
 @model Shop.UI.Pages.Admin.IndexModel
 @{
 }
-
-<div id="app">
-    <input type="number" @@change="alert('Witaj')" v-model="price" />
-    <button v-on:click="togglePrice">Toggle</button>
-    <p v-show="showPrice">
-        {{price}}
-    </p>
-    <p v-if="showPrice">
-        {{formatPrice}}
-    </p>
-
+<div id="app" class="container">
+    <product-manager v-if="menu === 0"></product-manager>
+    <p v-else-if="menu === 1">Orders</p>
+    <p v-else-if="menu === 2">Stock</p>
 </div>
-
 @section scripts{
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="~/js/admin/product-manager.js"></script>
     <script src="~/js/admin/main.js"></script>
-} 
+
+
+}
+
+
