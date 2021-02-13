@@ -149,6 +149,7 @@ text-align: center;
     transition: all .5s;
     filter: brightness(75%);
     height: 100%;
+    position: relative;
     padding: 15px 15px;
 }
 
@@ -156,7 +157,7 @@ text-align: center;
     filter: brightness(100%);
 }
 
-.fixedspan {
+    .fixedspan {
     color: white;
     transition: all 0s;
 }
@@ -204,6 +205,7 @@ text-align: center;
     .mainbtn:hover::after {
         border-color: #373737;
         transition: border 0.1s linear 0s;
+        
     }
 
 .mainbtn .mainbtn-inner {
@@ -538,4 +540,15 @@ text-align: center;
         position: static;
         left: 0px;
     }
+}
+
+/* SLIDER */
+.carousel-item {
+    height: 100%;
+    position: relative;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
