@@ -639,3 +639,15 @@ text-align: center;
     -o-background-size: cover;
     background-size: cover;
 }
+
+/* RULES */
+
+.rulesarea {
+    height: 100%;
+    margin-top: 100px;
+    padding: 50px 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+}
