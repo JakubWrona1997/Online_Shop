@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "SizeTableLayout";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+        <div class="row">
+            <div class="col-md-12 sizetablemenu">
+                <div class="row" style="padding: 0px 0px;">
+                    <div class="col-md-3 col-sm-6">
+                        <div id="button2">
+                            <button class="accbutton"><a asp-area="" asp-page="/SizeTable_Men">MĘŻCZYŹNI</a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div id="button2">
+                            <button class="accbutton"><a asp-area="" asp-page="/SizeTable_Women">KOBIETY</a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div id="button2">
+                            <button class="accbutton"><a asp-area="" asp-page="/SizeTable_Kids">DZIECI</a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div id="button2">
+                            <button class="accbutton"><a asp-area="" asp-page="/SizeTable_Shoes">OBUWIE</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            @RenderBody()
+    </div>
+</body>

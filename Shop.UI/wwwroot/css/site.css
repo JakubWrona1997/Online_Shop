@@ -89,6 +89,10 @@ a {
         color: rgb(218, 0, 0);
     }
 
+table, th, td {
+    border: 1px solid black;
+}
+
 .form-control{
     border-radius: 0px;
 }
@@ -548,6 +552,33 @@ text-align: center;
         text-align: center;
         padding: 10px 0px;
     }
+}
+
+/*SIZE TABLE*/
+
+.sizetablemenu {
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+    height: 100%;
+    text-align: left;
+    padding: 24px 24px;
+}
+
+.sizetablepanel {
+    margin-top: 30px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+    height: 100%;
+}
+
+.sizetable {
+    width: 100%;
+}
+
+.mainrow {
+    font-weight: bold;
+    background-color: darkgray;
 }
 
 /* PRODUCTEX */
