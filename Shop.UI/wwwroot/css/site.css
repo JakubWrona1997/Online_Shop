@@ -584,10 +584,17 @@ text-align: center;
 /* PRODUCTEX */
 
 .prodexrow {
-    height: 900px;
+    height: 100%;
     margin-top: 100px;
     background-color: rgb(245, 245, 245);
     box-shadow: 0 0 20px #888;
+    padding-bottom: 30px;
+}
+
+.inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 .addcart {
@@ -596,7 +603,7 @@ text-align: center;
     padding: 12px 24px;
     transition: all .5s;
     color: black;
-    width: 70%;
+    width: 100%;
 }
 
     .addcart:hover {
