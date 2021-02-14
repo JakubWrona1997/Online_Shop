@@ -1,0 +1,67 @@
+﻿@page
+@model Shop.UI.Pages.ShoppingCartModel
+@{
+    ViewData["Title"] = "ShoppingCart";
+}
+
+<div class="row"></div>
+<div class="row cartrow">
+    <div class="col-md-8 cart">
+        <h3><p style="text-align: left;">Koszyk</p></h3>
+        <hr style="width: 100%;" />
+
+        <div class="row">
+            <div class="col-3">
+                <img src="~/images/PROD_EX_CART.jpg" style="width: 100%;" />
+            </div>
+            <div class="col-7 py-3" style="text-align: left;">
+                <h5>$Nazwa produktu</h5>
+                <h6>Kolor: $kolor</h6>
+                <h6>Rozmiar: $rozmiar</h6>
+            </div>
+            <div class="col-2 py-3" style="text-align: right;">
+                <h5>$Cena PLN</h5>
+            </div>
+        </div>
+        <hr style="width: 100%;" />
+
+    </div>
+    <div class="col-md-4 checkout">
+        <div class="row">
+            <div class="col-6" style="text-align: left;">
+                CENA PRODUKTÓW
+            </div>
+            <div class="col-6" style="text-align: right;">
+                $TOTAL PLN
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6" style="text-align: left;">
+                DOSTAWA
+            </div>
+            <div class="col-6" style="text-align: right;">
+                OD 0,00 PLN
+            </div>
+        </div>
+        <hr style="width:100%;" />
+        <div class="row">
+            <div class="col-7" style="text-align: left;">
+                <strong>ŁĄCZNA KWOTA</strong> Z VAT
+            </div>
+            <div class="col-5" style="text-align: right;">
+                <strong>$TOTAL PLN</strong>
+            </div>
+        </div>
+        <br />
+        <div id="button2">
+            <button class="addcart"><a asp-area="">Przejdź do kasy</a></button>
+        </div>
+        <br /><br />
+        <h6><p style="text-align: left;">AKCEPTOWANE PŁATNOŚCI:</p></h6>
+        <img src="https://www.housebrand.com/media/SHARED/returns/cards.svg" style="width: 20%" />
+        <img src="https://www.housebrand.com/media/SHARED/returns/PAYU.svg" style="width: 15%" />
+        <img src="https://www.housebrand.com/media/SHARED/returns/blik.png" style="width: 15%" />
+        <img src="https://www.housebrand.com/media/SHARED/returns/PayPal.svg" style="width: 20%" />
+        <img src="https://www.housebrand.com/media/SHARED/stronywizerunkowe/mohito/cms/payments/PayPo_logo.png" style="width: 20%" />
+    </div>
+<br />
