@@ -19,15 +19,15 @@
                     <img src="~/images/SLIDE1.jpg" style="width: 100%;">
                     <div class="carousel-caption d-none d-md-block">
                         <h2 class="display-4">Pokaż styl</h2>
-                        <p class="lead">ZOBACZ WIĘCEJ</p>
-                    </div>
+                        <a asp-page="/ProductEx" style="color: white;"><p class="lead">ZOBACZ WIĘCEJ</p></a>
+</div>
                 </div>
                 <!-- SLIDE 2 -->
                 <div class="carousel-item">
                     <img src="~/images/SLIDE2.jpg" style="width: 100%;">
                     <div class="carousel-caption d-none d-md-block">
                         <h2 class="display-4">Pokaż klasę</h2>
-                        <p class="lead">ZOBACZ WIĘCEJ</p>
+                        <a asp-page="/ProductEx" style="color: white;"><p class="lead">ZOBACZ WIĘCEJ</p></a>
                     </div>
                 </div>
                 <!-- SLIDE 2 -->
@@ -35,7 +35,7 @@
                     <img src="~/images/SLIDE3.jpg" style="width: 100%;">
                     <div class="carousel-caption d-none d-md-block">
                         <h2 class="display-4">Pokaż wdzięk</h2>
-                        <p class="lead">ZOBACZ WIĘCEJ</p>
+                        <a asp-page="/ProductEx" style="color: white;"><p class="lead">ZOBACZ WIĘCEJ</p></a>
                     </div>
                 </div>
             </div>
@@ -56,13 +56,13 @@
     <div class="col-lg-3 col-sm-6 col-6 series overs">
         <img src="~/images/SERIES_DLANIEGO.jpg" style="width: 100%">
         <div class="mainbtn">
-            <span class="mainbtn-inner"><a class="fixedspan" asp-page="/ProductsGrid">DLA NIEGO</a></span>
+            <span class="mainbtn-inner"><a class="fixedspan" asp-page="/ProductEx">DLA NIEGO</a></span>
         </div>
     </div>
     <div class="col-lg-3 col-sm-6 col-6 series overs">
         <img src="~/images/SERIES_DLANIEJ.jpg" style="width: 100%">
         <div class="mainbtn">
-            <span class="mainbtn-inner">DLA NIEJ</span>
+            <span class="mainbtn-inner"><a class="fixedspan" asp-page="/ProductEx">DLA NIEJ</a></span>
         </div>
     </div>
     <div class="col-lg-6 newsletter">
@@ -93,54 +93,60 @@
 
 <!--PRODUCTS-->
 <div class="row">
-    <div class="col-lg-2 col-sm-4 col-6 series overs">
-        <img src="~/images/MAIN_PRODUCT_1.jpg" style="width: 100%">
-        &nbsp;
-        <h5>Koszulka Marvel</h5>
-        <p class="text-secondary">49,99 PLN</p>
+    <div class="col-lg-2 col-sm-4 col-6 series overs"><a asp-page="/ProductEx">
+    <img src="~/images/MAIN_PRODUCT_1.jpg" style="width: 100%">
+    &nbsp;
+    <h5>Koszulka Marvel</h5>
+    <p class="text-secondary">49,99 PLN</p>
+</a>
     </div>
     <!---->
-    <div class="col-lg-2 col-sm-4 col-6 series overs">
-        <img src="~/images/MAIN_PRODUCT_2.jpg" style="width: 100%">
-        &nbsp;
-        <h5>Bluza z kapturem</h5>
-        <p class="text-secondary">79,99 PLN</p>
-    </div>
+    <div class="col-lg-2 col-sm-4 col-6 series overs"><a asp-page="/ProductEx">
+    <img src="~/images/MAIN_PRODUCT_2.jpg" style="width: 100%">
+    &nbsp;
+    <h5>Bluza z kapturem</h5>
+    <p class="text-secondary">79,99 PLN</p>
+</a>
+</div>
     <!---->
-    <div class="col-lg-2 col-sm-4 col-6 series overs">
-        <img src="~/images/MAIN_PRODUCT_3.jpg" style="width: 100%">
-        &nbsp;
-        <h5>Spodnie skinny</h5>
-        <p class="text-secondary">35,99 PLN</p>
-    </div>
+    <div class="col-lg-2 col-sm-4 col-6 series overs"><a asp-page="/ProductEx">
+    <img src="~/images/MAIN_PRODUCT_3.jpg" style="width: 100%">
+    &nbsp;
+    <h5>Spodnie skinny</h5>
+    <p class="text-secondary">35,99 PLN</p>
+</a>
+</div>
     <!---->
-    <div class="col-lg-2 col-sm-4 col-6 series overs">
-        <img src="~/images/MAIN_PRODUCT_4.jpg" style="width: 100%">
-        &nbsp;
-        <h5>Koszula w kratę</h5>
-        <p class="text-secondary">59,99 PLN</p>
-    </div>
+    <div class="col-lg-2 col-sm-4 col-6 series overs"><a asp-page="/ProductEx">
+    <img src="~/images/MAIN_PRODUCT_4.jpg" style="width: 100%">
+    &nbsp;
+    <h5>Koszula w kratę</h5>
+    <p class="text-secondary">59,99 PLN</p>
+</a>
+</div>
     <!---->
-    <div class="col-lg-2 col-sm-4 col-6 series overs">
-        <img src="~/images/MAIN_PRODUCT_5.jpg" style="width: 100%">
-        &nbsp;
-        <h5>Jeansowa kurtka sherpa trucker</h5>
-        <p class="text-secondary">159,99 PLN</p>
-    </div>
+    <div class="col-lg-2 col-sm-4 col-6 series overs"><a asp-page="/ProductEx">
+    <img src="~/images/MAIN_PRODUCT_5.jpg" style="width: 100%">
+    &nbsp;
+    <h5>Jeansowa kurtka sherpa trucker</h5>
+    <p class="text-secondary">159,99 PLN</p>
+</a>
+</div>
     <!---->
-    <div class="col-lg-2 col-sm-4 col-6 series overs">
-        <img src="~/images/MAIN_PRODUCT_6.jpg" style="width: 100%">
-        &nbsp;
-        <h5>Koszulka longsleeve z nadrukami</h5>
-        <p class="text-secondary">49,99 PLN</p>
-    </div>
+    <div class="col-lg-2 col-sm-4 col-6 series overs"><a asp-page="/ProductEx">
+    <img src="~/images/MAIN_PRODUCT_6.jpg" style="width: 100%">
+    &nbsp;
+    <h5>Koszulka longsleeve z nadrukami</h5>
+    <p class="text-secondary">49,99 PLN</p>
+</a>
+</div>
 </div>
 
 <div class="row">
     <div class="col-lg-12 series" style="margin-top:20px">
         <img src="~/images/WIDE_MAIN.jpg" style="width: 100%">
         <div class="mainbtn newcoll" style="font: 15px/1.2 'Oswald', sans-serif; border: 1px solid white;">
-            <span class="mainbtn-inner">NOWA KOLEKCJA</span>
+            <span class="mainbtn-inner"><a class="fixedspan" asp-page="/ProductEx">NOWA KOLEKCJA</a></span>
         </div>
     </div>
 </div>
