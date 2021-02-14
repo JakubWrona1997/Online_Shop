@@ -89,6 +89,26 @@ a {
         color: rgb(218, 0, 0);
     }
 
+.form-control{
+    border-radius: 0px;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.servicealign {
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .servicealign {
+        text-align: left;
+    }
+}
+
 .row {
 text-align: center;
 }
@@ -314,6 +334,11 @@ text-align: center;
     color: white;
 }
 
+#button2 {
+    text-align: left;
+    color: white;
+}
+
 .signin {
     background-color: rgb(63, 63, 63);
     border: none;
@@ -321,6 +346,18 @@ text-align: center;
     transition: all .5s;
     color: white;
 }
+
+.submitservice {
+    background-color: rgb(63, 63, 63);
+    border: none;
+    padding: 12px 36px;
+    transition: all .5s;
+    color: white;
+}
+.submitservice:hover {
+    background-color: rgb(218, 0, 0);
+}
+
 
 .signin:hover {
     background-color: rgb(218, 0, 0);

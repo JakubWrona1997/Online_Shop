@@ -5,4 +5,84 @@
     Layout = "~/Pages/Shared/_AccountLayout.cshtml";
 }
 
-<h1>About3</h1>
+<div class="row" style="text-align: left;">
+    <div class="col-md-7">
+        <h4>SKONTAKTUJ SIĘ Z NAMI</h4>
+        <br />
+        <form>
+            <div class="row">
+                <div class="col-md-4 py-1 servicealign">
+                    <h5>Imię</h5>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" placeholder="Wpisz imię">
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-4 py-1 servicealign">
+                    <h5>Nazwisko</h5>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" placeholder="Wpisz nazwisko">
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-4 py-1 servicealign">
+                    <h5>Adres e-mail</h5>
+                </div>
+                <div class="col-md-8">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Wpisz adres e-mail">
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-4 py-2 servicealign">
+                    <h5>Wybierz dział</h5>
+                </div>
+                <div class="col-md-8">
+                    <select class="form-control form-control-lg" id="exampleFormControlSelect2">
+                        <option>SKLEP ONLINE</option>
+                        <option>SKLEPY STACJONARNE - OBSŁUGA KLIENTA</option>
+                    </select>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-4 py-2 servicealign">
+                    <h5>Treść wiadomości</h5>
+                </div>
+                <div class="col-md-8">
+                    <textarea id="servicemessage" name="servicemessage" rows="5" style="width:100%">
+                    </textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-5">
+        <p class="brand">Pepega.</p>
+        <h5>ONLINE-SHOP</h5> <br />
+        <h6>
+            LPP S.A. <br />
+            UL. ANDROMEDA 39/44 <br />
+            80-2137 NIGHTCITY <br />
+            SĄD REJONOWY W NIGHTCITY VII WYDZIAŁ GOSPODARCZY <br />
+            KAPITAŁ ZAKŁADOWY 3 662 246 PLN (ZAPŁACONY W CAŁOŚCI) <br />
+            REGON: 199252164 <br />
+        </h6>
+        <h5>INFOLINIA</h5>
+        <h6>
+            PN-PT 9:00-19:00 <br />
+            SOB 10:00-17:00 <br /><br />
+
+
+            (KOSZT POŁĄCZENIA WG. TARYFY OPERATORA)
+        </h6>
+        <h4><p style="color: red">58 213 72 13</p></h4>
+        <br /><br />
+        <div id="button2">
+            <button type="submit" class="submitservice" asp-page="/Account">WYŚLIJ</button>
+        </div>
+    </div>
+</div>
