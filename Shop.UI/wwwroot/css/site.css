@@ -285,9 +285,21 @@ text-align: center;
     }
 }
 
+@media only screen and (max-width: 490px) {
+    .logpic {
+        height: 400px;
+    }
+}
+
 @media only screen and (max-width: 440px) {
     .logpic {
         height: 350px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .logpic {
+        height: 300px;
     }
 }
 
