@@ -37,12 +37,15 @@
         updateStock() {
 
         },
+        deleteStock() {
+
+        },
         addStock() {
             this.loading = true;
             axios.post('/Admin/stocks', this.newStock)
                 .then(res => {
                     console.log(res);
-                    this.selectedProduct.stock.push() = res.data;
+                    this.selectedProduct.stock.push(res.data);
                 })
                 .catch(err => {
                     console.log(err);
