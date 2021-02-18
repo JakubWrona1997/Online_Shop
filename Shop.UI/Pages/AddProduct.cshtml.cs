@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Shop.Database;
 using System.Threading.Tasks;
@@ -11,7 +11,7 @@ namespace Shop.UI.Pages
 {
     public class IndexModel : PageModel
     {
-        
+
         private AppDBContext _ctx;
 
         public IndexModel(AppDBContext context)
@@ -19,8 +19,13 @@ namespace Shop.UI.Pages
             _ctx = context;
         }
         [BindProperty]
+<<<<<<< HEAD:Shop.UI/Pages/Index.cshtml.cs
         public CreateProduct.Request Product { get; set; }
    
+=======
+        public CreateProduct.ProductViewModel Product { get; set; }
+
+>>>>>>> AMichalec:Shop.UI/Pages/AddProduct.cshtml.cs
         public IEnumerable<Application.ProductsAdmin.GetProducts.ProductViewModel> Products { get; set; }
         public void OnGet()
         {
@@ -32,6 +37,6 @@ namespace Shop.UI.Pages
 
             return RedirectToPage("Index");
         }
-       
+
     }
 }

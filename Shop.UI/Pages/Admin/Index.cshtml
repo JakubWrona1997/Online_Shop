@@ -1,6 +1,7 @@
 ﻿@page
 @model Shop.UI.Pages.Admin.IndexModel
 @{
+    Layout = "~/Pages/Shared/_AdminPanelLayout.cshtml";
 }
 <div id="app" class="container">
     <product-manager v-if="menu === 0"></product-manager>

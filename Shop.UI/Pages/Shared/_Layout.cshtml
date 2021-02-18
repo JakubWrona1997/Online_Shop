@@ -6,41 +6,148 @@
     <title>@ViewData["Title"] - Shop.UI</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <header>
+    <header style="position: fixed; z-index:999; width: 100%">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Shop.UI</a>
+                <a asp-area="" asp-page="/Index"><p class="brand">Pepega.</p></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        <li class="nav-item px-4">
+                            <a class="nav-link buttons" asp-area="" asp-page="/Index"><i class="fa fa-home  buttons"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Admin/Index">Admin</a>
+                            <a class="nav-link dropdown-toggle  buttons" data-toggle="dropdown"><i class="fa fa-bars buttons"></i></a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="col-megamenu">
+                                            <h4 class="title">ONA</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-megamenu">
+                                            <h4 class="title">ON</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-megamenu">
+                                            <h4 class="title">AKCESORIA</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-megamenu">
+                                            <h4 class="title">NOWOŚCI</h4>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                                <li><a href="#">Spódnice</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
-            </div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link buttons" asp-area="" asp-page="/Login"><i class="fa fa-user  buttons"></i></a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link buttons" asp-area="" asp-page="/ShoppingCart"><i class="fa fa-shopping-cart  buttons"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Admin/Index">Admin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container bott">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - Shop.UI - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="footer" style="border-top: solid 3px red">
+        <div class="container" >
+            <div class="row foot">
+                <div class="col-lg-4 col-md-12">
+                    <p class="brand">Pepega.</p>
+                    <h6>Pepega © 2020 Wszelkie prawa zastrzeżone</h6>
+                </div>
+                <div class="col-lg-3 offset-lg-2 col-md-6 col-6">
+                    <h5><b>Polityka prywatności</b></h5>
+                    <h6><a asp-page="/Privacy">Polityka prywatności</a></h6>
+                    <h6><a asp-page="/Cookies">Polityka cookies</a></h6>
+                    <h6><a href="#">Ustawienia powiadomień</a></h6>
+                    <h6><a asp-page="/TrustedPartners">Zaufani partnerzy</a></h6>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5><b>Pomoc</b></h5>
+                    <h6><a asp-page="/Rules">Regulamin</a></h6>
+                    <h6><a asp-page="/FAQ">FAQ - często zadawane pytania</a></h6>
+                    <h6><a asp-page="/SizeTable_Men">Tabela rozmiarów</a></h6>
+                    <h6><a href="#">Karty podarunkowe</a></h6>
+                    <h6><a asp-page="/Complaints">Reklamacje</a></h6>
+                </div>
+            </div>
+            <div class="row foot">
+                <div class="col-lg-4  col-md-12">
+                    <h5><b>Śledź nas</b></h5>
+                    <button class="buttons"><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></button>
+                    <button class="buttons"><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></button>
+                    <button class="buttons"><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></button>
+                    <button class="buttons"><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></button>
+                </div>
+                <div class="col-lg-3 offset-lg-5 col-md-12">
+                    <h5><b>Skontaktuj się z nami</b></h5>
+                    <div class="cent">
+                        <a class="nav-link" asp-area="" asp-page="/Service"><button type="submit" class="signin" style="padding: 0px 24px">FORMULARZ KONTAKTOWY</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 

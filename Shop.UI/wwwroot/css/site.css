@@ -7,19 +7,12 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
-
 .btn-primary {
-  color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
@@ -59,13 +52,627 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: rgb(242, 242, 242);
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  text-align: left;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+/*----------*/
+.brand {
+    font-family: 'Lobster', cursive;
+    font-size: 5vh;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+a {
+    color: black;
+    transition: all .5s;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: rgb(218, 0, 0);
+    }
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.form-control{
+    border-radius: 0px;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.servicealign {
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .servicealign {
+        text-align: left;
+    }
+}
+
+.row {
+text-align: center;
+}
+
+.foot {
+    text-align: left;
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .foot {
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+.bott {
+    padding-bottom: 250px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bott {
+        padding-bottom: 350px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bott {
+        padding-bottom: 350px;
+    }
+}
+
+.cent {
+    text-align: left;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .cent {
+        text-align: center;
+    }
+}
+
+
+.mainbtn {
+    display: inline-block;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: 0px solid white;
+    color: white;
+    font-size: 0px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 0px;
+    background: transparent;
+    transition: all .4s;
+}
+
+.series {
+    transition: all .5s;
+    filter: brightness(75%);
+    height: 100%;
+    position: relative;
+    padding: 15px 15px;
+}
+
+.series:hover {
+    filter: brightness(90%);
+}
+
+    .fixedspan {
+    color: white;
+    transition: all 0s;
+}
+
+    .fixedspan:hover {
+        color: #373737;
+    }
+
+
+.series:hover > .mainbtn {
+    font: 12px/1.2 "Oswald", sans-serif;
+    border: 1px solid white;
+}
+
+.mainbtn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #eeeeee;
+    z-index: 1;
+    opacity: 0;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+
+.mainbtn::after {
+    transition: border 0.1s linear 0.05s;
+}
+
+.mainbtn:hover {
+    color: #373737;
+    transition: color 0.1s linear 0s;
+}
+
+    .mainbtn:hover::before {
+        top: 0;
+        height: 100%;
+        opacity: 1;
+        transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+    }
+
+    .mainbtn:hover::after {
+        border-color: #373737;
+        transition: border 0.1s linear 0s;
+        
+    }
+
+.mainbtn .mainbtn-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.overs:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #888;
+    z-index: 99;
+}
+
+.newsletter {
+    background-color: white;
+    padding: 20px 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logarea {
+    height: 450px;
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    padding: 15px 50px;
+    box-shadow: 0 0 20px #888;
+    text-align: left;
+}
+
+.regarea {
+    height: 450px;
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    padding: 15px 50px;
+    box-shadow: 0 0 20px #888;
+    text-align: left;
+}
+
+.logpic {
+    height: 450px;
+    margin-top: 100px;
+    padding: 0px;
+    box-shadow: 0 0 20px #888;
+}
+
+@media only screen and (max-width: 992px) {
+    .logarea {
+        margin-top: 0px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .regarea {
+        margin-top: 0px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 577px) {
+    .regarea {
+        margin-top: 0px;
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .regarea {
+        margin-top: 0px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .logpic {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .logpic {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .logpic {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .logpic {
+        height: 250px;
+    }
+}
+
+#button1 {
+    text-align: right;
+    color: white;
+}
+
+#button2 {
+    text-align: left;
+    color: white;
+}
+
+.signin {
+    background-color: rgb(63, 63, 63);
+    border: none;
+    padding: 12px 24px;
+    transition: all .5s;
+    color: white;
+}
+
+.submitservice {
+    background-color: rgb(63, 63, 63);
+    border: none;
+    padding: 12px 36px;
+    transition: all .5s;
+    color: white;
+}
+.submitservice:hover {
+    background-color: rgb(218, 0, 0);
+}
+
+
+.signin:hover {
+    background-color: rgb(218, 0, 0);
+}
+
+#checkbox1 {
+    text-align: left;
+}
+
+.buttons {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    transition: all .5s;
+    color: black;
+}
+
+    .buttons:hover {
+        color: rgb(218, 0, 0);
+    }
+
+@media only screen and (max-width: 770px)
+{
+    .newcoll {
+        position: absolute;
+        top: 50%;
+        padding: 20px 32px;
+    }
+}
+
+@media all {
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+        .navbar .has-megamenu {
+            position: static !important;
+        }
+
+        .navbar .megamenu {
+            left: 0;
+            right: 0;
+            width: 80%;
+            padding: 20px;
+        }
+
+        .navbar .nav-link {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+}
+
+/* ACCOUNT */
+
+.accountmenu {
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+    height: 500px;
+    text-align: left;
+    padding: 24px 24px;
+}
+
+@media only screen and (Max-width: 1200px) {
+    .accountmenu {
+        height: 650px;
+    }
+}
+
+@media only screen and (Max-width: 991px) {
+    .accountmenu {
+        height: 550px;
+    }
+}
+
+@media only screen and (Max-width: 767px)
+{
+    .accountmenu {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .accountmenu {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .accountmenu {
+        height: 400px;
+    }
+}
+
+.accountpanel {
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+    height: 500px;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+    .accountpanel {
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .accountpanel {
+        height: 1050px;
+    }
+}
+
+.accbutton {
+    background-color: transparent;
+    border: solid black 2px;
+    padding: 12px 24px;
+    transition: all .5s;
+    color: black;
+    width: 100%;
+}
+
+    .accbutton:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .accbutton:hover > a {
+        color: white;
+    }
+
+#button2 {
+    text-align: left;
+    padding: 5px;
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .accbutton {
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 811px) {
+    .accbutton {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .accbutton {
+        font-size: 14px;
+        padding: 10px 9px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .accbutton {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .paddbutt1 {
+        padding-right: 5px;
+    }
+
+    .paddbutt2 {
+        padding-left: 5px;
+    }
+
+    .paddbutt3 {
+        padding-right: 5px;
+    }
+
+    .paddbutt4 {
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #button2 {
+        text-align: center;
+        padding: 10px 0px;
+    }
+}
+
+/*SIZE TABLE*/
+
+.sizetablemenu {
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+    height: 100%;
+    text-align: left;
+    padding: 24px 24px;
+}
+
+.sizetablepanel {
+    margin-top: 30px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+    height: 100%;
+}
+
+.sizetable {
+    width: 100%;
+}
+
+.mainrow {
+    font-weight: bold;
+    background-color: darkgray;
+}
+
+/* PRODUCTEX */
+
+.prodexrow {
+    height: 100%;
+    margin-top: 100px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
+    padding-bottom: 30px;
+}
+
+.inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.addcart {
+    background-color: transparent;
+    border: solid black 2px;
+    padding: 12px 24px;
+    transition: all .5s;
+    color: black;
+    width: 100%;
+}
+
+    .addcart:hover {
+        background-color: black;
+        color: white;
+    }
+
+        .addcart:hover > a {
+            color: white;
+        }
+
+.prodinfo {
+    text-align: left;
+    position: fixed;
+    left: 50vw;
+}
+
+@media only screen and (max-width: 992px) {
+    .prodexrow {
+        height: 1300px;
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+    .prodinfo {
+        text-align: left;
+        position: static;
+        left: 0px;
+    }
+}
+
+/* SHOPPING CART */
+.cartrow {
+    height: 100%;
+    margin-top: 100px;
+    background-color: black;
+    box-shadow: 0 0 20px #888;
+}
+
+.cart {
+    background-color: rgb(245, 245, 245);
+    padding: 30px 30px;
+}
+
+.checkout {
+    background-color: rgb(230, 230, 230);
+    padding: 75px 30px;
+}
+
+/* SLIDER */
+.carousel-item {
+    height: 100%;
+    position: relative;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* RULES */
+
+.rulesarea {
+    height: 100%;
+    margin-top: 100px;
+    padding: 50px 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px #888;
 }

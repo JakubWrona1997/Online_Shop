@@ -1,0 +1,34 @@
+﻿@page
+@model Shop.UI.Pages.AccountModel
+@{
+    ViewData["Title"] = "About us";
+    Layout = "~/Pages/Shared/_AccountLayout.cshtml";
+}
+
+<h4><p style="text-align: left;">CENTRUM KLIENTA</p></h4>
+<br />
+<br />
+<h5>Tutaj można śledzić zamówienia, oceniać produkty, zarządzać bonami oraz zarządzać kontem.</h5>
+<br /><br /><br /><br />
+<h4><p style="text-align: left;">OSTATNIE ZAMÓWIENIA</p></h4>
+<br />
+<div class="row">
+    <div class="col-8" style="text-align: left;">
+        <h6>Zamówienie</h6>
+    </div>
+    <div class="col-4" style="text-align: left;">
+        <h6>Status</h6>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-8" style="text-align: left;">
+        <h5>Zamówienie z dnia $data</h5>
+        <h6>Numer zamówienia: $numer_zamówienia</h6>
+        <h6>Suma: $suma PLN</h6>
+    </div>
+    <div class="col-4" style="text-align: left;">
+        <h5>$status</h5>
+    </div>
+</div>
+<hr style="width: 100%;" />
