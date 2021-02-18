@@ -11,10 +11,10 @@
         </div>
         <div class="col-6" v-if="selectedProduct">
             <table class="table">
-                <tr v-for="stock in selectedProduct.stock">
+                <tr v-for="(stock, index)in selectedProduct.stock">
                     <td><input v-model="stock.description" /></td>
                     <td><input v-model.number="stock.quantity" /></td>
-                    <td><a class="text-warning" @click="deleteStock(stock.id)" />Usunięcie</td>
+                    <td><a class="text-danger" @click="deleteStock(stock.id, index)" />Usunięcie</td>
 
                 </tr>
             </table>

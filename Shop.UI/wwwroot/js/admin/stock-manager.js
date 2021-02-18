@@ -35,15 +35,34 @@
             this.newStock.productId = product.id;
         },
         updateStock() {
-
+            this.loading = true; 
+                axios.put('/Admin/stocks', {
+                    stock: this.selectedProduct.stock.map(x => {
+                        return {
+                            id: x.id,
+                            description: x.description,
+                            quantity: x.quantity,
+                            productId: this.selectedProduct.id
+                        };
+                    })
+                })
+                .then(res => {
+                    console.log(res);
+                    this.selectedProduct.stock.splice(index, 1);
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+                .then(() => {
+                    this.loading = false;
+                });
         },
-        deleteStock(id) {
-
+        deleteStock(id, index) {
             this.loading = true;
             axios.delete('/Admin/stocks' + id)
                 .then(res => {
                     console.log(res);
-                    this.selectedProduct.stock.push(res.data);
+                    this.selectedProduct.stock.splice(index, 1);
                 })
                 .catch(err => {
                     console.log(err);
