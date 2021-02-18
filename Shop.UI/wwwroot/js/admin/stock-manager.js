@@ -37,8 +37,20 @@
         updateStock() {
 
         },
-        deleteStock() {
+        deleteStock(id) {
 
+            this.loading = true;
+            axios.delete('/Admin/stocks' + id)
+                .then(res => {
+                    console.log(res);
+                    this.selectedProduct.stock.push(res.data);
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+                .then(() => {
+                    this.loading = false;
+                });
         },
         addStock() {
             this.loading = true;

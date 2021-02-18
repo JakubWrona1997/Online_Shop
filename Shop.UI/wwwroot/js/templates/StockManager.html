@@ -14,6 +14,7 @@
                 <tr v-for="stock in selectedProduct.stock">
                     <td><input v-model="stock.description" /></td>
                     <td><input v-model.number="stock.quantity" /></td>
+                    <td><a class="text-warning" @click="deleteStock(stock.id)" />Usunięcie</td>
 
                 </tr>
             </table>
