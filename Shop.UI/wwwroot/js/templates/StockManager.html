@@ -1,0 +1,43 @@
+﻿<div>
+    <div class="col">
+        <div class="col-3">
+            <table class="table">
+                <tr v-for="product in products" @click="selectProduct(product)">
+                    <td>{{product.description}}</td>
+
+                </tr>
+
+            </table>
+        </div>
+        <div class="col-6" v-if="selectedProduct">
+            <table class="table">
+                <tr v-for="stock in selectedProduct.stock">
+                    <td><input v-model="stock.description" /></td>
+                    <td><input v-model.number="stock.quantity" /></td>
+
+                </tr>
+            </table>
+            <a class="btn btn-warning" @click="updateStock">
+                Zaktualizuj produkty
+            </a>
+        </div>
+        <div class="col-3" v-if="selectedProduct">
+            <h2 class="card-title">
+                Nowa ilość
+            </h2>
+            <div>
+                <div class="form-control">
+                    <input v-model="newStock.Description" />
+                </div>
+            </div>
+            <div>
+                <div class="form-control">
+                    <input v-model.number="newStock.quantity" />
+                </div>
+            </div>
+            <a class="btn btn-success" @click="addStock">
+                Dodaj
+            </a>
+        </div>
+    </div>
+</div>

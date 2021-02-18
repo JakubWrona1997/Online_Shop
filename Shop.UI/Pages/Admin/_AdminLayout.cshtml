@@ -19,15 +19,15 @@
                         <div class="sidebar-header">
                             <h3>Menu</h3>
                         </div>
-                        <ul class="nav flex-column nav-pills">
+                        <ul class="nav nav-pills flex-column">
                             <li class="nav-item">
-                                <a asp-page="/Admin/Index" class="nav-link active" id="Products_menu-tab" data-toggle="pill" aria-controls="Products_menu" aria-selected="true">Produkty</a>
+                                <a asp-page="/Admin/Index" class="nav-link">Produkty</a>
                             </li>
                             <li class="nav-item">
-                                <a asp-page="/Admin/Orders" class="nav-link" id="Products_orders-tab" data-toggle="pill" aria-controls="Products_orders" aria-selected="false">Zamówienia</a>
+                                <a asp-page="/Admin/Orders" class="nav-link">Zamówienia</a>
                             </li>
                             <li class="nav-item">
-                                <a asp-page="/Admin/Stock" class="nav-link" id="Products_stock-tab" data-toggle="pill" aria-controls="Products_stock" aria-selected="false">Magazyn</a>
+                                <a asp-page="/Admin/Stock" class="nav-link">Magazyn</a>
                             </li>
                         </ul>
                     </nav>
@@ -39,7 +39,8 @@
             </div>
         </div>
     </div>
-   
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
