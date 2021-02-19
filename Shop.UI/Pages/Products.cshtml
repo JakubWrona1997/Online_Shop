@@ -1,0 +1,16 @@
+﻿@page
+@model Shop.UI.Pages.ProductsModel
+@{
+}
+
+<div>
+    @{ 
+        foreach (var p in Model.Products)
+        {
+            <a asp-page="Product" asp-route-name="@p.Name">
+                @p.Name - @p.Description - @p.Price
+            </a>
+        }
+
+    }
+</div>
