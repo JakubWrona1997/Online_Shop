@@ -1,14 +1,28 @@
-﻿@page
+﻿@page "{name}"
 @model ProductModel
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div>
-    @{ 
+    <p>@Model.Product.Name</p>
+    <p>@Model.Product.Description</p>
+    <p>@Model.Product.Price</p>
+    <div>
+        <label>
+            Magazyn
+        </label>
+        <select>
+            @foreach (var s in Model.Product.Stock)
+            {
+                <option value="@s.Id">@s.Descritpion</option>
+            } 
+        </select>
+    </div>
+    @{
         foreach (var p in Model.Products)
         {
-            <a asp-page="Product" asp-route-name="@p.Name">
+            <a asp-page="Product" asp-route-name="@p.Name.Replace(" ","-")">
                 @p.Name - @p.Description - @p.Price
             </a>
             <br />

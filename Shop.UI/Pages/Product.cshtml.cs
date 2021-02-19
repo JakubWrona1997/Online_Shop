@@ -20,7 +20,7 @@ namespace Shop.UI.Pages
         public GetProduct.ProductViewModel Product { get; set; }
         public void OnGet(string name)
         {
-            Product = new GetProduct(_ctx).Do(name);
+            Product = new GetProduct(_ctx).Do(name.Replace(" ", ""));
         }
     }
 }
