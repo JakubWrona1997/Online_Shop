@@ -9,17 +9,18 @@ using Shop.Database;
 
 namespace Shop.UI.Pages
 {
-    public class ProductsModel : PageModel
+    public class ProductModel : PageModel
     {
         private AppDBContext _ctx;
-        public ProductsModel(AppDBContext ctx)
+        public ProductModel(AppDBContext ctx)
         {
             _ctx = ctx;
         }
-        public IEnumerable<GetProducts.ProductViewModel> Products { get; set; }
-        public void OnGet()
+
+        public GetProduct.ProductViewModel Product { get; set; }
+        public void OnGet(string name)
         {
-            Products = new GetProducts(_ctx).Do();
+            Product = new GetProduct(_ctx).Do(name);
         }
     }
 }

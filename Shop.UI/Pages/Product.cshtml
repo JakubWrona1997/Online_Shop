@@ -1,6 +1,7 @@
 ﻿@page
-@model Shop.UI.Pages.ProductsModel
+@model ProductModel
 @{
+    ViewData["Title"] = "Home Page";
 }
 
 <div>
@@ -10,6 +11,7 @@
             <a asp-page="Product" asp-route-name="@p.Name">
                 @p.Name - @p.Description - @p.Price
             </a>
+            <br />
         }
 
     }
